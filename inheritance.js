@@ -25,7 +25,6 @@ function Employee(name, age, position) {
     this.position = position;
     Employee.prototype.superclass.call(this, name, age);
 };
-
 Employee.prototype.getPosition = function() {
     return this.position;
 };
