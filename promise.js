@@ -21,3 +21,6 @@ ajax('http://example.com/get').then(function(data) {
 }, function(error) {
     console.log('Error: ', error);
 });
+
+// no chance to use "throw 'Error';" in promise because it's an asynchronous operation
+// try - throw - catch chain works only in the synchronous operations
