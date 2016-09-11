@@ -1,0 +1,9 @@
+TEST-DRIVEN-DEVELOPMENT:
+1. Unit tests prove that your code actually works.
+2. You get a low-level regression-test suite.
+3. You can improve the design without breaking it.
+4. Test-first reduces the cost of bugs.
+5. They demonstrate concrete progress.
+6. Unit tests are a form of sample code.
+7. Test-first forces you to plan before you code.
+8. Unit tests make better design.
