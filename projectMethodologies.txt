@@ -1,0 +1,20 @@
+PROJECT METHODOLOGIES:
+1. Sequential Methodologies (Waterfall, Critical Path Method)
+2. The PMI/PMBOK “Method”
+3. The Agile Family (Agile, Scrum, Canban, Extreme Programming, Adaptive Project Framework)
+4. The Change Management Methodologies (Event Chain Meth)
+5. The Process-based Methodologies (Lean, Six Sigma, Lean Six Sigma, Process-Based Project Management)
+6. Other (PRINCE2, PRiSM)
+
+SCRUM:
+SCRUM ROLES: Product owner->Scrum master->Team member->Stakeholders->Users.
+-------Card->Conversation->Confirmation
+ARTIFACT: Product backlog->Burndown->Sprint backlog->Burndown->Product backlog delta report->Impediment.
+PROCESS: Update product backlog->Sprint planning->Daily scrum/work->Product increment->Sprint review->Sprint retrospective.
+
+KANBAN:
+Next -> Analysis (goal is clear, first tasks defined, story split) -> Development (code clean and in trunk, integration and regression tested, UAT) -> Acceptance (customer accepted) -> Prod
+1) complex tasks to be broken down
+2) no required time boxes or iterations
+3) no set roles are prescribed
+4) publish the maximum number of stories allowed in column at any time
