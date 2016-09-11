@@ -1,0 +1,24 @@
+SOFTWARE DEVELOPMENT LIFE:
+1. Software Develpment Life Cycle
+2. Project phases and their goals
+3. Roles and their activities 
+4. Document types & their templates
+
+Change driven & plan driven:
+1) end date
+2) plan (long term planning)
+3) CR attitude to the changes
+Idea->experts->requirements->estimate
+testing process based on requirements (test scenario, acceptance test)
+budget = people + estimates; impacts
+
+TO BUILD PROJECT:
+1. Code convention
+2. Code review
+3. Cvs workflow
+4. CI/CD workflow
+5. Workflow with other team
+6. App architecture
+7. Testing
+8. Communication plan
+9. Project Methodologies
