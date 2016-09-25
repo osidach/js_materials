@@ -1,43 +1,41 @@
-var proxyExample = new Proxy([
-  { name: 'A', type: 'a' },
-  { name: 'B', type: 'b' },
-  { name: 'C', type: 'c' }
-], {
+var proxyExample = new Proxy({
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4
+}, {
   get: function (target, key) {
     console.log('Get: ', target, key);
-    return target[key] || target.getItem(key) || undefined;
+    return target[key] || undefined;
   },
   set: function (target, key, value) {
     console.log('Set: ', target, key, value);
     if (key in target) {
       return false;
     }
-    return target.setItem(key, value);
+    return true;
   },
   deleteProperty: function (target, key) {
     console.log('Delete: ', target, key);
     if (key in target) {
       return false; 
     }
-    return target.removeItem(key);
+    return true;
   },
   enumerate: function (target, key) {
     console.log('Enumerate: ', target, key);
-    return target.keys();
+    return target;
   },
   ownKeys: function (target, key) {
     console.log('Own keys: ', target, key);
-    return target.keys();
+    return target;
   },
   has: function (target, key) {
     console.log('Has: ', target, key);
-    return key in target || target.hasItem(key);
+    return key in target || undefined;
   },
   defineProperty: function (target, key, desc) {
     console.log('Define property: ', target, key);
-    if (desc && 'value' in desc) {
-      target.setItem(key, desc.value);
-    }
     return target;
   },
   getOwnPropertyDescriptor: function (target, key) {
@@ -52,8 +50,11 @@ var proxyExample = new Proxy([
   }
 });
 
-console.log(proxyExample.D = 'd');
-console.log(proxyExample.getItem('D'));
+proxyExample.a;
+delete proxyExample.b;
 
-proxyExample.setItem('E', 'e');
-console.log(proxyExample.e);
+proxyExample.D = 'd';
+proxyExample.D;
+
+proxyExample.E = 'e';
+proxyExample.e;
